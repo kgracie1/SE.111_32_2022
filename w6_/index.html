@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kevon Gracie">
+        <meta name="Calculator" content="Pay calculation">
+        <title>Work Calculator </title>
+    </head>
+    <body>
+        <h1>Payment Calculator</h1>
+
+        <script>
+            var name = prompt("Please enter your name: ")
+
+            alert(`Thank you: ${name}`)
+
+            var pay = prompt("please enter gross pay befor taxes: ")
+
+            pay = Number(pay)
+            console.log(`The pay value is: ${pay}`)
+
+            var tax = .2
+
+            var taxes = pay * tax
+
+            alert(`your tax deductions came out to: $${taxes}`)
+            console.log(`The taxe value is: ${tax}`)
+
+            var net = pay - taxes
+
+            alert(`Your total amount recieved: $${net}`)
+            console.log(`The net value is: ${net}`)
+        </script>
+    </body>
+</html>
